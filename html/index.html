@@ -1,0 +1,49 @@
+ <!DOCTYPE HTML>
+<html>
+  <head>
+    <title> ආතල් චැට්රූම් 😂 </title>
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+    <div id = "Main">
+      <audio id = "Ding" src = "Ding.mp3"> </audio>
+      <h1 id = "Title"> Chatroom  </h1>
+      
+      <h4 id = "Footer"> කැමති නමක් username එකට ගහන්න.🤭 ඕනෙ නමකින් අලුත් චැට්රූම් create කරන්න පුලුවන් ⚠️ (Case-sensitive).Default ඔයාලා සෙට් වෙන්නෙ Room1 එකට.🥰 Chatroom කියන තැනින් ඔයාලා ඉන්න රූම් එක බලාගන්න පුලුවන්. 😉 </h4>
+      <div id = "AccessPort">
+        <label id = "NameLabel"> Username: </label>
+        <br>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel"> Chatroom: </label>
+        <br>
+        <input id = "IDInput" value = "Room1" type = "text">
+        <br><br>
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
+
+      </div>
+      <h2 id = "RoomID"> Chatroom : None </h2>
+      <div id = "Chat">
+        <p id = "Message0" class = "Message"> - </p>
+        <p id = "Message1" class = "Message"> - </p>
+        <p id = "Message2" class = "Message"> - </p>
+        <p id = "Message3" class = "Message"> - </p>
+        <p id = "Message4" class = "Message"> - </p>
+        <p id = "Message5" class = "Message"> - </p>
+        <p id = "Message6" class = "Message"> - </p>
+        <p id = "Message7" class = "Message"> - </p>
+        <p id = "Message8" class = "Message"> - </p>
+        <p id = "Message9" class = "Message"> - </p>
+        <label id = "MessageLabel"> Message </label>
+        <input id = "ComposedMessage" type = "text">
+        <input id = "SendMessage" onclick="Send()" value = "Send" class = "Button" type = "submit">
+      </div>
+      <br><br>
+    </div>
+  </body>
+  <footer><h5 id = "Footer"> Hashx ™️</h5></footer>
+</html>
